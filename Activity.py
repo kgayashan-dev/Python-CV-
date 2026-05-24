@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread("shapes.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("fig1.2.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Top-left edge kernel
 top_left_kernel = np.array([
