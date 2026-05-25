@@ -52,24 +52,23 @@ plt.axis("off")
 plt.savefig("sobel_results.png")
 plt.show()
 
+# # Laplacian edge detection
+# laplacian = cv2.Laplacian(img, cv2.CV_64F)
+# laplacian_abs = cv2.convertScaleAbs(laplacian)
 
-# Laplacian edge detection
-laplacian = cv2.Laplacian(img, cv2.CV_64F)
-laplacian_abs = cv2.convertScaleAbs(laplacian)
+# plt.figure(figsize=(10, 5))
 
-plt.figure(figsize=(10, 5))
+# plt.subplot(1, 2, 1)
+# plt.imshow(img, cmap="gray")
+# plt.title("Original Image")
+# plt.axis("off")
 
-plt.subplot(1, 2, 1)
-plt.imshow(img, cmap="gray")
-plt.title("Original Image")
-plt.axis("off")
+# # Display Laplacian result
+# plt.subplot(1, 2, 2)
+# plt.imshow(laplacian_abs, cmap="gray")
+# plt.title("Laplacian Result")
+# plt.axis("off")
 
-# Display Laplacian result
-plt.subplot(1, 2, 2)
-plt.imshow(laplacian_abs, cmap="gray")
-plt.title("Laplacian Result")
-plt.axis("off")
-
-# Save the plot
-plt.savefig("laplacian_result.png")
-plt.show()
+# # Save the plot
+# plt.savefig("laplacian_result.png")
+# plt.show()
